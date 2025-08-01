@@ -9,11 +9,25 @@ const express = require("express")
 const env = require("dotenv").config()
 const app = express()
 const static = require("./routes/static")
+const expressLayout = require("express-ejs-layouts")
+
+/* ***********************
+ * View Engine and Templates
+ *************************/
+app.set("view engine", "ejs")
+app.use(expressLayout)
+app.set("layout", "layouts/layout")
 
 /* ***********************
  * Routes
  *************************/
 app.use(static)
+
+
+//Index route
+app.get("/", (req, res) => {
+  res.render("index", {title: "Home"})
+})
 
 /* ***********************
  * Local Server Information
