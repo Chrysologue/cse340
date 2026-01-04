@@ -1,4 +1,21 @@
 <% const date = new Date(); let year = date.getFullYear()%>
 <footer>
-    <p class="copyright">&copy; <%= year %> CSE 340 APP</p>
+  <section class="footer-about">
+    <h4>CSE 340 Motors</h4>
+    <p>
+      Your trusted car dealer offering quality new and used vehicles with
+      reliable service and fair pricing.
+    </p>
+    <p class="copyright">&copy; <%= year %></p>
+  </section>
+  <section class="quick-links">
+    <h4>Quick Links</h4>
+    <%- nav %>
+  </section>
+  <section class="footer-contact">
+    <h4>Contact</h4>
+    <p>📍 Antananarivo, Madagascar</p>
+    <p>📞 +261 34 00 000 00</p>
+    <p>✉️ contact@abcmotors.mg</p>
+  </section>
 </footer>

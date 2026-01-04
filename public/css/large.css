@@ -1,0 +1,45 @@
+@media screen and (min-width: 600px) {
+  .humberger-lines {
+    display: none;
+  }
+
+  .siteName a {
+    font-size: 2rem;
+  }
+
+
+  nav {
+    position: static;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transform: translateY(0);
+    transition: none;
+    padding: 12px;
+  }
+
+  nav a {
+    font-size: 1em;
+    margin-right: 10px;
+  }
+
+  nav a::before {
+    bottom: 5px;
+    transition: transform .3s ease;
+  }
+
+  .hero-title-cta h2 {
+    font-size: 2em;
+  }
+
+  .hero-title-cta p {
+    font-size: 1.2rem;
+  }
+
+  footer {
+  grid-template-columns: repeat(1fr, 3);
+}
+
+}
